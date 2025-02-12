@@ -1,0 +1,12 @@
+pipelile{
+    agent any
+
+    stages{
+        stage('checkOut Stage'){
+            steps{
+                git branch: 'Dev',url: 'https://github.com/Asifmiyya/gb007-git.git'
+                
+            }
+        }
+    }
+}
