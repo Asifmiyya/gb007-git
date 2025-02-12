@@ -35,5 +35,14 @@ pipeline {
             '''
             }
         }
+        satge('Current Process Running'){
+            steps{
+                sh '''
+                echo "Printing the current running process"
+                ps -eaf | head
+                '''
+
+            }
+        }
     }
 }
